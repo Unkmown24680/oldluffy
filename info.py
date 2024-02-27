@@ -47,7 +47,7 @@ support_chat_id = environ.get('SUPPORT_CHAT_ID', '') # support group id ( make s
 reqst_channel = environ.get('REQST_CHANNEL_ID', '') # request channel id ( make sure bot is admin )
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
-NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
+NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://moulinath24680:unknown08642@cluster0.fzwhhum.mongodb.net/?retryWrites=true&w=majority")
@@ -55,7 +55,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Biisal")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', False))
+VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
+HOWTOVERIFY = environ.get('HOWTOVERIFY', url='https://t.me/') # How to open tutorial link for verification
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'krishnalink.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', '1be47a10b0e730678ed7fee533df207af3c5478f')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
