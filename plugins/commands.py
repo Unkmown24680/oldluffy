@@ -342,7 +342,6 @@ async def start(client, message):
         
     
     elif data.startswith("short"):
-    protect_content=True
     current_time = datetime.now(pytz.timezone(TIMEZONE))
     curr_time = current_time.hour        
     if curr_time < 12:
