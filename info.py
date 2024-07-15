@@ -29,8 +29,8 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/6c0ad0c99fe9
 CODE = (environ.get('CODE', 'https://graph.org/file/6c0ad0c99fe90843d602a.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'zxlink.in'))
-STREAM_API = (environ.get('STREAM_API', 'e02963f90c4578126dee38fcf6c89548e5759914'))
+STREAM_SITE = (environ.get('STREAM_SITE', ''))
+STREAM_API = (environ.get('STREAM_API', '')
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/openlink_movierequest/5'))
 
 # Admins, Channels & Users
