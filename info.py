@@ -30,7 +30,7 @@ CODE = (environ.get('CODE', 'https://graph.org/file/6c0ad0c99fe90843d602a.jpg'))
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', ''))
-STREAM_API = (environ.get('STREAM_API', '')
+STREAM_API = (environ.get('STREAM_API', ''))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/openlink_movierequest/5'))
 
 # Admins, Channels & Users
